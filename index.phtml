@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Google Drive Example</title>
+    </head>
+    <body>
+	    <h2>Store File In Google Drive</h2>
+        <ul>
+        <?php foreach ($files as $file) { ?>
+            <li><?php echo $file; ?></li>
+        <?php } ?>
+        </ul>
+		<h2>File Upload In Google Drive</h2>
+    <form action="index.php" method="post" enctype="multipart/form-data" >
+	    Name:-<input type="text" name="name" id="name"><br><br> 
+        <label for="">Choose File</label>
+        <input type="file" name="file" >
+        
+        <input type="submit" name="submit" value="submit" >
+    </form>
+    </body>
+</html>
